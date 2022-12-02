@@ -52,8 +52,7 @@ WHERE절 서브쿼리)
 WHERE   >     결괏값 로우 1개(WHERE절에 비교연산자 사용시)
 			  IN    결괏값 로우 N개, 칼럼 1개(WHERE절에 IN, NOT IN 사용시)
 
-<구현>
-*/
+<구현> */
 
 SELECT d.name AS Department
      , e.name AS Employee
