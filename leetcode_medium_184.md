@@ -4,6 +4,9 @@
 
 /* 리트코드의 버전이 낮아서 윈도우 함수 지원 X -> MS SQL Server로 놓고 문제풀기
 
+
+-- 풀이 1
+
 <문제 이해>
 부서별 / 중복 허용 / top / 출력
 <idea>
@@ -26,6 +29,8 @@ SELECT TOP
 
 -- [42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ','. (102) (SQLExecDirectW)
 -- 어디 ,가 오류인지 확인 필요
+
+
 
 
 -- 풀이 2
@@ -58,6 +63,7 @@ SELECT d.name AS Department
  WHERE salary IN (SELECT MAX(salary) 
                    FROM Employee
                   GROUP BY departmentId)
+
 
 
 -- 풀이 4
